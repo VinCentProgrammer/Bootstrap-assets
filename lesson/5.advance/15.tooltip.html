@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Use ToolTip In Bootstrap</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="text-center">Use ToolTip In Bootstrap</h2>
+                <form action="">
+                    <div class="form-group">
+                        Username: <input type="text" name="username" id="username" class="form-control" data-toggle="tooltip" title="Username hava 6 character!">
+                    </div>
+                    <div class="form-group">
+                        Email: <input type="email" name="email" id="email" class="form-control" data-toggle="tooltip" title="Email hava <strong>@gmail.com</strong>">
+                    </div>
+                </form>
+                <button class="btn btn-danger mb-3" data-toggle="tooltip" title="Register Now">Register</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat autem facere harum doloremque quos ipsa quo exercitationem, voluptatem rerum veniam odit repellat explicabo fugit nostrum amet cum consequatur officia cupiditate similique eius quia. Nesciunt cum maxime soluta quibusdam quaerat officia repudiandae. Soluta quia omnis perspiciatis sit, maxime porro hic laboriosam!</p>
+                <p>Lorem ipsum dolor sit amet <a href="" class="text-decoration-none" data-toggle="tooltip" title="This is <strong> my tooltip</strong>!!!" >My tooltip!</a> consectetur adipisicing elit. Animi a sed dolore architecto eos quibusdam, odit saepe blanditiis harum esse?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" class="text-decoration-none" data-toggle="tooltip" title="This is <i>my tooltip</i>!!!" >My tooltip!</a> consectetur adipisicing elit. Animi a sed dolore architecto eos quibusdam, odit saepe blanditiis harum esse?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" class="text-decoration-none" data-toggle="tooltip" title="This is <u>my tooltip</u>!!!" >My tooltip!</a> consectetur adipisicing elit. Animi a sed dolore architecto eos quibusdam, odit saepe blanditiis harum esse?</p>
+                <p>Lorem ipsum dolor sit amet <a href="" class="text-decoration-none" data-toggle="tooltip" title="This is <s>my tooltip</s>!!!" >My tooltip!</a> consectetur adipisicing elit. Animi a sed dolore architecto eos quibusdam, odit saepe blanditiis harum esse?</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: 'bottom',
+                trigger: 'hover focus',
+                html: true
+            });
+        })
+    </script>
+
+</body>
+</html>
